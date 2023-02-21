@@ -18,6 +18,7 @@ def main():
     print("Welcome to the Frankenstein Choose Your Own Adventure game!")
     print("-----------------------------------------------------------")
     print("")
+    print("Ava")
     
     
 
