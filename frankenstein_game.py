@@ -23,6 +23,7 @@ def main():
     print("Ava4")
     print("LETS GO")
     print("testing to see if I remember how...")
+    print("HI AIKAM")
 
     
 if __name__ == "__main__":
