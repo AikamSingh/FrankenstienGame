@@ -24,6 +24,7 @@ def main():
     print("LETS GO")
     print("testing to see if I remember how...")
     print("HI AIKAM")
+    print("HI")
 
     
 if __name__ == "__main__":
