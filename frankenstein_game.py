@@ -22,8 +22,7 @@ def main():
     print("Ava2")
     print("Ava4")
     print("LETS GO")
-    
-    
+    print("testing to see if I remember how...")
 
     
 if __name__ == "__main__":
