@@ -12,19 +12,24 @@ and choices are based on the plot of Frakenstein
 __author__ = "Ava Teng and Aikam Singh"
 __version__ = "2023-02-21"
 
-
+import time
+import os
 
 def main():
+    os.system("clear")
     print("Welcome to the Frankenstein Choose Your Own Adventure game!")
     print("-----------------------------------------------------------")
-    print("")
-    print("Ava")
-    print("Ava2")
-    print("Ava4")
-    print("LETS GO")
-    print("testing to see if I remember how...")
-    print("HI AIKAM")
-    print("HI")
+    time.sleep(1.5)
+    print("As Dr. Frankenstein finalized the creature laying at his feet...")
+    time.sleep(1.5)
+    print("The creature began to slowly gain conciousness.")
+    time.sleep(1.5)
+    print("First, his mouth twitched,")
+    time.sleep(1.5)
+    print("Then, his fingers wiggled,")
+    time.sleep(1.5)
+    print("Until finally the creature lifted his gruesome eyelids to reveal sickly yellow eyes.")
+    time.sleep(1.5)
 
     
 if __name__ == "__main__":
