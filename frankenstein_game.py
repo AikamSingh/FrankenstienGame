@@ -15,12 +15,25 @@ __version__ = "2023-02-21"
 import time
 import os
 
+a = "helo"
+
 def c():
     os.system("clear")
 
 def forest():
     print("As you wander through the forest, you come across a house. You decide to hide in a nearby abandoned shed and observe your new friends from afar.")
-    val = input("What do you do in this situation? \n a) collect firewood \n b) approach your friends \n c) search the shed")
+    val = input("What do you do in this situation? \n a) collect firewood \n b) approach your friends \n c) search the shed\n")
+    if val == "a":
+        print("You find a nearby tree and collect firewood. As you have been observing your friends, you notice that they collect firewood everyday and that it is a taxing task. As a gesture of kindness, you decide to leave some firewood for them to use.")
+        time.sleep(1)
+        c()
+    if val == "b":
+        print("You wait for an opportune moment to approach the cabin.")
+        #time.sleep(1)
+        print(".....")
+        #time.sleep(1)
+        print("You notice that only the old man is in the cabin")
+        
 
 def main():
     c()
@@ -42,13 +55,20 @@ def main():
     #time.sleep(1)
     if val == "a".lower():
         print("You were a science experiment created by Victor Frankenstein, a product of his research on resurrecting life.")
+        val = input("How do you feel about this? \n a) curious \n b) angry \n c) sad\n")
         c()
-        val = input("How do you feel about this? \n a) curious \n b) angry \n c) sad")
         if val == "a".lower():
             print("You set out into the woods in search of your mysterious creator. Surely he will welcome you with open arms!")
+            print("You decide to sed out into the woods in search of your benevolent creator.")
             forest()
         elif val == "b".lower():
-            print(:
+            print("You are furious as you realize your creator, your parental guidance, has abandoned you, an innocent and naive creature.")
+            print("You decide to venture into the woods and find this creator in order to exact your revenge")
+            forest()
+        elif val == "c".lower():
+            print("As you realize that you are along, you feel a sadness consume you. You think, 'Perhaps he just lost me and can't find me. I shall find him and we will happily reunite as a family!'")
+            print("You decide to venture into the woods to find your family.")
+            forest()
     elif val == "b".lower():
         print("You end the game")
         again = input("Do you want to play again(y/n)?")
