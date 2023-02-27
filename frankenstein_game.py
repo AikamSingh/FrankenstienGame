@@ -33,7 +33,6 @@ def forest():
         print(".....")
         #time.sleep(1)
         print("You notice that only the old man is in the cabin")
-        print("test")
         
 
 def main():
