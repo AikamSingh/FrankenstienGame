@@ -17,6 +17,7 @@ __version__ = "2023-02-21"
 
 import time
 import os
+import sys
 
 """
 if val == "a".lower():
@@ -27,6 +28,12 @@ elif val == "c".lower():
     print("")
 
 """
+
+def print_slowly(text):
+    for c in text:
+        print(c, end = "")
+        sys.stdout.flush()
+        time.sleep(1)
 
 def c():
     os.system("clear")
@@ -54,8 +61,8 @@ def forest():
     elif val == "b".lower():
         print("You wait for an opportune moment to approach the cabin.")
         s()
-        print(".....")
-        s()
+        print_slowly("......")
+        print()
         print("You notice that only the old man is in the cabin")
 
     elif val == "c".lower():
