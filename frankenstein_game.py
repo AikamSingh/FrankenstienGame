@@ -28,6 +28,10 @@ elif val == "c".lower():
     print("")
 
 """
+nice = 0
+survival = 0
+
+
 
 def print_slowly(text):
     for c in text:
@@ -45,11 +49,46 @@ def end():
     print("THE END")
     s()
     c()
+    print("HERE ARE YOUR STATISTICS FOR THE GAME: ")
+    # print out the stats of the game based on the options
+    print("Niceness points: " + str(nice))
+    print("Survival points: " + str(survival))
+    #print("_____ points: " + str(something idk yet))
+
     val = input("Would you like to play again [y/n]?")
     if val == "y".lower():
         main()
     else:
         print("Thanks for playing! See you again soon!")
+
+def nice(i):
+    print("You just got + " + str(i) + " niceness points for choosing that option!")
+    nice += i
+
+def survival(i):
+    print("You just got + " + str(i) + " niceness points for choosing that option!")
+    survival += i
+
+#def something idk yet
+
+def cabin(): 
+    print("You see a cabin as you wander through the forest. You decide to knock on the door and try to talk to the inhabitants.")
+    s()
+    print("An old man opens the door and asks, 'Who's there?'");
+    s()
+    print("You notice that the old man is not looking at anything in particular, so you come to the conclusion that his sight is impared in some way. Knowing how your creator rejected you once he saw you, you decide to take advantage of this blindess and try to win his sympathy.")
+    s()
+    print("While you are recounting your journeys to the old man, son, daughter in law, and daughter walk in.")
+    s()
+    print("The son, not aware of the situation and your motives, decides to start beating you with a stick and chasing you out of the house.")
+    val = input("What do you do? \n a) run away into the woods \n b) try to reason with the son \n c) fight back")
+    if val == "a".lower():
+        print("You sprint as fast as possible out of the house. You can't believe how they treated you, even though you shouldn't be suprised since it is the same way that your creator reacted to you. Saddened by this, you decide to move on from the cabin and try to find your creator again.")
+        nice(10)
+    elif val == "b".lower():
+        print("")
+    elif val == "c".lower():
+        print("")
 
 def forest():
     print("As you wander through the forest, you come across a house. You decide to hide in a nearby abandoned shed and observe your new friends from afar. \n")
@@ -69,8 +108,8 @@ def forest():
         print("In the shed you find several books which contain old tales such as 'Paradise Lost'. You also decide to check your coat pockets and find a journal which was written by your creator.")
         s()
         print("After reading the books, you learn more about the French language and your creator. You realize that when he created you, he instantly despised you and considered killing you. Enraged by this, you decide to exact revenge on your creator. ")
-        
-        
+
+
 def imagery():
     print("You as you venture further and further, your hope diminishes.")
     print("You have encountered several humans, none of whom have greeted you kindly")
@@ -98,18 +137,32 @@ def wake_up():
         s()
         if val == "a".lower():
             print("You set out into the woods in search of your mysterious creator. Surely he will welcome you with open arms!")
-            print("You decide to sed out into the woods in search of your benevolent creator.")
             forest()
         elif val == "b".lower():
             print("You are furious as you realize your creator, your parental guidance, has abandoned you, an innocent and naive creature.")
             print("You decide to exact your revenge")
-            forest()
+            print("But first, you must quench your thirst and satisfy your hunger! Perhaps you can find some in the forest...")
+            val = input("Would you like to a) pick some berries, b) hunt some fish?, or c) eat leaves")
+            if val == "a".lower():
+                print("Searching", end = "")
+                print_slowly("......")
+                print("Look! Some wild raspberries!")
+                print("You pick a bunch and eat them while continuing to walk, until, ", end = "")
+                forest()
+            if val == "b".lower():
+                print("Hmm... there should be a river nearby... I swear you passed one...")
+                s()
+                print("Aha! There it is! Let's go catch some fish!")
+                for i in range(3):
+                    print("><(((°>")
+                    
         elif val == "c".lower():
             print("As you realize that you are along, you feel a sadness consume you. You think, 'Perhaps he just lost me and can't find me. I shall find him and we will happily reunite as a family!'")
             print("You decide to venture into the woods to find your family.")
             imagery()
     elif val == "b".lower():
-        print("You end the game")
+        print("Great! Naps (or in this case an everlasting sleep) are amazing!")
+        s()
         again = input("Do you want to play again(y/n)?")
         c()
         s()
