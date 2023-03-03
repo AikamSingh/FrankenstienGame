@@ -95,6 +95,7 @@ def cabin():
     sl()
     print("The son, not aware of the situation and your motives, decides to start beating you with a stick and chasing you out of the house.")
     val = input("What do you do? \n a) run away into the woods \n b) try to reason with the son \n c) fight back")
+    c()
     if val == "a".lower():
         c()
         nice(10)
@@ -103,6 +104,7 @@ def cabin():
         sl()
         c()
         print("You sprint as fast as possible out of the house. You can't believe how they treated you, even though you shouldn't be suprised since it is the same way that your creator reacted to you. Saddened by this, you decide to move on from the cabin and try to find your creator again.")
+        time.sleep(1)
         town()
     elif val == "b".lower():
         c()
@@ -111,6 +113,7 @@ def cabin():
         sl()
         c()
         print("You try to explain your situation to the son, but to no avail. You decide to leave the house and continue your journey.")
+        sl()
         town()
     elif val == "c".lower():
         c()
@@ -138,6 +141,7 @@ def imagery():
         print("In order to start your quiet life of roasting marshmallows, you gather dry wood and light it using two rocks.")
         print("Every day you enjoy the sunrise and the hapiness brought by the gentle warmth.")
         print("And that is how you live: alone, but content, your creator long forgotton.")
+        time.sleep(4)
         end()
     elif val == "b".lower():
         cabin()
@@ -184,15 +188,11 @@ def wake_up():
                 print("Hmm... there should be a river nearby... I swear you passed one...")
                 sl()
                 print("Aha! There it is! Let's go catch some fish!")
+                print()
+                print("🌊 🌊 🌊 🌊 🌊 🌊 🌊")
                 for i in range(3):
                     sl()
                     print("><(((°>")
-                """print("        )       ")
-                print("       ((       ")
-                print("      ))((      ")
-                print("(___(__(())___()")
-                print("(___________())")"""
-                survival(100)
                 cabin()
             else:
                 c()
@@ -201,6 +201,8 @@ def wake_up():
                 c()
                 print("Interesting choice... not what I would have picked but okay...")
                 print("You do you, friend!")
+                sl()
+                c()
                 imagery()
         elif val == "c".lower():
             print("As you realize that you are along, you feel a sadness consume you. You think, 'Perhaps he just lost me and can't find me. I shall find him and we will happily reunite as a family!")
