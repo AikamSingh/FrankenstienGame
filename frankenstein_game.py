@@ -43,7 +43,7 @@ def c():
     os.system("clear")
 
 def sl():
-    time.sleep(0.5)
+    time.sleep(1.5)
 
 def nice(i):
     global n
@@ -81,7 +81,6 @@ def end():
 def town(): #FINAL FUNCTION
     print("After weeks of wandering, you happen upon the town of your creator. Determined to complete your initial mission, you decide to go look for him and find the answers to your looming questions about your creation and purpose.")
     time.sleep(2)
-    c()
     end()
 
 def cabin(): 
